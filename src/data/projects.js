@@ -1,0 +1,32 @@
+export const projects = [
+  {
+    number: '01',
+    title: 'SQL Data Warehouse',
+    category: 'DATA ENGINEERING',
+    description: 'A multi-layer data warehouse using bronze, silver and gold layers, ETL workflows, data modelling and analytical SQL queries.',
+    image: '/images/warehouse-preview.svg',
+    alt: 'Illustrative data warehouse project preview',
+    stack: ['SQL', 'ETL', 'Data Modeling'],
+    github: 'https://github.com/shivakumar123-bit/Data-Warehouse-Project-SQL-',
+  },
+  {
+    number: '02',
+    title: 'Bank Loan Report',
+    category: 'BUSINESS INTELLIGENCE',
+    description: 'A three-page interactive Power BI report with DAX measures and visual insights into loan applications and repayment performance.',
+    image: '/images/loan-dashboard-preview.svg',
+    alt: 'Illustrative bank loan dashboard preview',
+    stack: ['Power BI', 'DAX', 'Excel'],
+    github: 'https://github.com/shivakumar123-bit/Bank-Loan-Report-Power-BI-',
+  },
+  {
+    number: '03',
+    title: 'Sales & Profits Dashboard',
+    category: 'DATA ANALYTICS',
+    description: 'An Excel dashboard designed to summarize sales and profit performance through charts, KPIs and clear business reporting.',
+    image: '/images/sales-dashboard-preview.svg',
+    alt: 'Illustrative sales and profits dashboard preview',
+    stack: ['Excel', 'Charts', 'Data Analysis'],
+    github: 'https://github.com/shivakumar123-bit/Sales-Profits-Dashboard-Excel-',
+  },
+]

@@ -1,0 +1,6 @@
+import { ArrowUpRight, Github } from 'lucide-react'
+import { projects } from '../data/projects.js'
+
+export default function Projects() {
+  return <section className="section section-border" id="projects"><div className="container"><div className="section-heading heading-row reveal"><div><p className="eyebrow">SELECTED WORK</p><h2>Projects that show<br /><span className="text-gradient">how I think.</span></h2></div><p className="section-intro">A few projects where I’ve practised data workflows, reporting and analytical thinking. Next up: more full-stack applications.</p></div><div className="projects-grid">{projects.map((project, i) => <article className={`project-card reveal reveal-delay-${i + 1}`} key={project.number}><div className="project-image"><img src={project.image} alt={project.alt} loading="lazy" /><span className="project-number">{project.number}</span></div><div className="project-content"><p className="project-category">{project.category}</p><h3>{project.title}</h3><p className="project-description">{project.description}</p><div className="project-tags">{project.stack.map((item) => <span key={item}>{item}</span>)}</div><div className="project-links"><a href={project.github} target="_blank" rel="noreferrer"><Github size={16} /> View code <ArrowUpRight size={15} /></a></div></div></article>)}</div></div></section>
+}
